@@ -1,5 +1,3 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IBoost - Insights to help you improve your IBMYP grades</title>
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
-    <link rel="stylesheet" href="{% static 'improvements.css' %}">
     <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-        crossorigin="anonymous">
-    <script src="{% static 'improvements.js' %}"></script>
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="improvements.css">
+    <script src="improvements.js"></script>
 </head>
 
 <body>
@@ -23,22 +21,22 @@
             <div id="sidenav" class="col-md-2 px-3">
                 <div class="d-flex flex-column">
                     <div class="p-4">
-                        <a id="brand" href="/IBOOSTpage1/dashboard/" class="navbar-brand"><img src="{% static 'img/logo.png' %}" alt="IBOOST"
+                        <a id="brand" href="dashboard.html" class="navbar-brand"><img src="img/logo.png" alt="IBOOST"
                                 class="img-fluid" style="max-width:7em; max-height: 3em;"></a>
                     </div>
                     <div class="p-2"></div>
-                    <div class="p-2 menutext"><a href="/IBOOSTpage1/dashboard/"><img src="{% static 'img/dashboard.png' %}" alt="d"
+                    <div class="p-2 menutext"><a href="dashboard.html"><img src="img/dashboard.png" alt="d"
                                 class="img-fluid"
                                 style="max-width:3em; max-height: 2em; padding: 0em 0.5em 0.2em 0em;">Dashboard</a>
                     </div>
-                    <div class="p-2 menutext"><a href="/IBOOSTpage1/grades/"><img src="{% static 'img/grades.png' %}" alt="d"
+                    <div class="p-2 menutext"><a href="grades.html"><img src="img/grades.png" alt="d"
                                 class="img-fluid"
                                 style="max-width:3em; max-height: 2em; padding: 0em 0.5em 0.2em 0em;">Grades</a></div>
-                    <div class="p-2 menutext dashtext"><a href="/IBOOSTpage1/improvements/"><img src="{% static 'img/improvements.png' %}" alt="d"
+                    <div class="p-2 menutext dashtext"><a href="improvements1.html"><img src="img/improvements.png" alt="d"
                                 class="img-fluid"
                                 style="max-width:3em; max-height: 2em; padding: 0em 0.5em 0.2em 0em;">Improvements</a>
                     </div>
-                    <div class="p-2 menutext"><a href="/IBOOSTpage1/profile/"><img src="{% static 'img/profile.png' %}" alt="d"
+                    <div class="p-2 menutext"><a href="profile.html"><img src="img/profile.png" alt="d"
                                 class="img-fluid"
                                 style="max-width:3em; max-height: 2em; padding: 0em 0.5em 0.2em 0em;">Profile</a></div>
                     <div class="pt-md-5"></div>
@@ -61,9 +59,9 @@
             <div id="improvementscontent" class="col-md-10">
                 <h1>Your Improvement Areas</h1>
                 <nav class="nav nav-pills nav-justified px-5">
-                    <a class="nav-item nav-link" href="/IBOOSTpage1/improvements1/">Improvement Name 1</a>
-                    <a class="nav-item nav-link active" href="/IBOOSTpage1/improvements2/">Improvement Name 2</a>
-                    <a class="nav-item nav-link" href="/IBOOSTpage1/improvements3/">Improvement Name 3</a>
+                    <a class="nav-item nav-link" href="improvements1.html">Improvement Name 1</a>
+                    <a class="nav-item nav-link active" href="improvements2.html">Improvement Name 2</a>
+                    <a class="nav-item nav-link" href="improvements3.html">Improvement Name 3</a>
                 </nav>
                 <div class="container-fluid p-3">
                     <div class="row">
@@ -73,17 +71,17 @@
                                 Unfortunately, your scores in "improvement name" are lower than what you might like, especially in _____. Fixing this should help you improve your overall ____ score, as well as give you valuable skills that transfer to other subjects!
                             </div>
                             <h2 class="pt-3">Your "Improvement Name 2" Data</h2>
-                            <img src="{% static 'img/empty.png' %}" alt="" class="img-fluid improvementdata">
+                            <img src="img/empty.png" alt="" class="img-fluid improvementdata">
                         </div>
                         <div class="col-lg-6">
                             <h2>Improve your "Improvement Name"</h2>
                             <!-- Video teaching you how to improve (from interviews)-->
-                            <img src="{% static 'img/empty.png' %}" alt="" class="img-fluid improvementdata">
+                            <img src="img/empty.png" alt="" class="img-fluid improvementdata">
                             <div id="improvement" class="p-4 mt-2">
                                 _____ can be difficult to master. There's a lot of skills that you have to grasp when completing your Criterion _ tasks. This video contains advice from a tenured IB teaching professional, who should teach you everything you need to know to boost your Criterion _ grade! 
                             </div>
                             <h2 class="pt-3">Your Progress</h2>
-                            <img src="{% static 'img/empty.png' %}" alt="" class="img-fluid improvementdata">
+                            <img src="img/empty.png" alt="" class="img-fluid improvementdata">
                         </div>
                     </div>
                 </div>
