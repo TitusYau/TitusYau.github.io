@@ -44,3 +44,14 @@
   width: 13em;
   cursor: pointer;
 }
+
+.edit3{
+  color:white;
+  text-decoration:none;
+  padding:1em 1em 1em 1em;
+}
+
+.edit3:hover{
+  color:black;
+}
+
